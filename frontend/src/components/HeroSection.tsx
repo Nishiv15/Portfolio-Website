@@ -1,16 +1,25 @@
 import { Github, Linkedin, Mail, MapPin, Sparkles } from 'lucide-react';
-import { coreConcepts, databases, devTools, profile, programmingLanguages, projects, techStack } from '../lib/portfolio';
+import { profile, projects, techStack } from '../lib/portfolio';
 import { Button } from './ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 
 export function HeroSection() {
-  const skillCount =
-    programmingLanguages.length + techStack.length + databases.length + devTools.length + coreConcepts.length;
+  const emailAddress = profile.email.replace('mailto:', '');
   const initials = profile.name
     .split(' ')
     .map((part) => part[0])
     .join('')
     .slice(0, 2);
+  const highlights = [
+    {
+      value: `${techStack.length}+`,
+      label: 'Tech Stack',
+    },
+    {
+      value: projects.length,
+      label: 'Featured Projects',
+    },
+  ];
 
   return (
     <section
@@ -57,17 +66,22 @@ export function HeroSection() {
             <MapPin className="h-4 w-4" />
             {profile.location}
           </p>
+          <a
+            className="flex items-center gap-2 text-sm font-bold text-primary transition hover:text-primary/80"
+            href={profile.email}
+          >
+            <Mail className="h-4 w-4" />
+            Email : {emailAddress}
+          </a>
         </CardHeader>
         <CardContent>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
-            <div className="rounded-lg border bg-background p-4">
-              <strong className="block text-2xl text-primary">{skillCount}+</strong>
-              <span className="text-sm text-muted-foreground">Skills & concepts</span>
-            </div>
-            <div className="rounded-lg border bg-background p-4">
-              <strong className="block text-2xl text-primary">{projects.length}</strong>
-              <span className="text-sm text-muted-foreground">Featured Projects</span>
-            </div>
+            {highlights.map((item) => (
+              <div className="rounded-lg border bg-background p-4" key={item.label}>
+                <strong className="block text-2xl text-primary">{item.value}</strong>
+                <span className="text-sm text-muted-foreground">{item.label}</span>
+              </div>
+            ))}
           </div>
         </CardContent>
       </Card>

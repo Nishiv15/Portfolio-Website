@@ -3,6 +3,8 @@ import { profile } from '../lib/portfolio';
 import { Button } from './ui/button';
 
 export function ContactSection() {
+  const emailAddress = profile.email.replace('mailto:', '');
+
   return (
     <section
       id="contact"
@@ -11,6 +13,10 @@ export function ContactSection() {
       <div>
         <p className="mb-3 text-xs font-extrabold uppercase tracking-normal text-teal-100 dark:text-primary">Contact</p>
         <h2 className="text-3xl font-black leading-tight tracking-normal sm:text-5xl">Let&apos;s build something useful.</h2>
+        <a className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-teal-100 transition hover:text-white dark:text-muted-foreground dark:hover:text-foreground" href={profile.email}>
+          <Mail className="h-4 w-4" />
+          {emailAddress}
+        </a>
       </div>
       <div className="flex flex-wrap gap-3">
         <Button asChild variant="secondary">
