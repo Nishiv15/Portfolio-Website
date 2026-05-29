@@ -1,6 +1,7 @@
 import { GraduationCap } from 'lucide-react';
 import { education } from '../lib/portfolio';
 import { SectionHeading } from './SectionHeading';
+import { Badge } from './ui/badge';
 
 export function EducationSection() {
   return (
@@ -14,7 +15,14 @@ export function EducationSection() {
             </div>
             <div>
               <p className="mb-1 font-extrabold text-accent">{item.period}</p>
-              <h3 className="text-xl font-bold">{item.degree}</h3>
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                <h3 className="text-xl font-bold">{item.degree}</h3>
+                {'score' in item && item.score ? (
+                  <Badge variant="secondary" className="w-fit text-sm">
+                    {item.score}
+                  </Badge>
+                ) : null}
+              </div>
               <strong className="mt-2 block">{item.school}</strong>
               {'details' in item && item.details ? (
                 <p className="mt-2 leading-7 text-muted-foreground">{item.details}</p>

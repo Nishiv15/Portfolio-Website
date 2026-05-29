@@ -7,13 +7,15 @@ import { SummarySection } from './components/SummarySection';
 
 function App() {
   return (
-    <main className="min-h-screen overflow-hidden">
+    <main className="min-h-screen overflow-x-hidden">
       <Header />
-      <HeroSection />
-      <SummarySection />
-      <EducationSection />
-      <ProjectsSection />
-      <ContactSection />
+      <div className="pt-[132px] sm:pt-[76px]">
+        <HeroSection />
+        <SummarySection />
+        <EducationSection />
+        <ProjectsSection />
+        <ContactSection />
+      </div>
     </main>
   );
 }

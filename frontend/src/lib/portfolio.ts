@@ -21,11 +21,13 @@ export const education = [
     school: 'Indus University',
     period: '2023 - 2027',
     details: 'Focused on software engineering, data structures, web development, and database systems.',
+    score: '9.65 CGPA'
   },
   {
     degree: 'Higher Secondary Education',
     school: 'Cosmos Castle International School',
     period: '2022 - 2023',
+    score: '74%'
   },
 ];
 

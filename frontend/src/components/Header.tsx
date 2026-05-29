@@ -28,7 +28,7 @@ export function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-20 border-b bg-background/85 px-4 py-4 backdrop-blur sm:px-8">
+    <header className="fixed inset-x-0 top-0 z-50 border-b bg-background/95 px-4 py-4 shadow-sm backdrop-blur sm:px-8">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <a className="flex items-center gap-2 font-extrabold" href="#home" aria-label="Go to home">
           <Code2 className="h-6 w-6 text-primary" />
