@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Software developer portfolio featuring profile summary, education, projects, and contact links."
+    />
+    <title>Software Developer Portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      const theme = window.localStorage.getItem('portfolio-theme') || 'dark';
+      document.documentElement.classList.toggle('dark', theme === 'dark');
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
