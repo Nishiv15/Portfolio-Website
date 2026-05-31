@@ -13,7 +13,7 @@ export function HeroSection() {
   const highlights = [
     {
       value: `${techStack.length}+`,
-      label: 'Tech Stack',
+      label: 'Tools and Technologies',
     },
     {
       value: projects.length,

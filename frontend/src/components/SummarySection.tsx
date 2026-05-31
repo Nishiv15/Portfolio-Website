@@ -8,19 +8,19 @@ const summaryCards = [
   {
     icon: Rocket,
     title: 'What I Build',
-    text: 'Responsive web applications, interactive interfaces, dashboards, and project experiences designed for clarity, speed, and everyday usability.',
+    text: 'Scalable web and mobile applications using the MERN stack, Django, and Flutter, with responsive interfaces and reliable backend workflows.',
   },
   {
     icon: Code2,
     title: 'How I Work',
-    text: 'I prioritize readable code, component-based architecture, thoughtful styling, and testing the important paths before shipping.',
+    text: 'I focus on efficient, user-centered solutions and use modern AI development tools to streamline planning, implementation, and iteration.',
   },
 ];
 
 export function SummarySection() {
   const skillGroups = [
     { title: 'Programming Languages', items: programmingLanguages },
-    { title: 'Tech Stack', items: techStack },
+    { title: 'Tools and Technologies', items: techStack },
     { title: 'Databases', items: databases },
     { title: 'Developer Tools', items: devTools },
     { title: 'Core Concepts', items: coreConcepts },

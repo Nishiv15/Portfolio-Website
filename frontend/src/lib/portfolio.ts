@@ -6,7 +6,7 @@ export const profile = {
   github: 'https://github.com/Nishiv15',
   linkedin: 'https://www.linkedin.com/in/nishivt',
   summary:
-    'I build clean, reliable web applications with React, TypeScript, and modern frontend tooling. I enjoy turning complex requirements into fast, polished products with strong user experience and maintainable code.',
+    'I am a Software Developer with hands on experience in the MERN stack, Django, and Flutter, building scalable web and mobile applications. I enjoy developing efficient, user-focused solutions and leveraging modern AI development tools and technologies to streamline the software development process.',
 };
 
 export const programmingLanguages = ['Javascript', 'Python', 'SQL', 'HTML', 'CSS', 'PHP', 'C++'];
