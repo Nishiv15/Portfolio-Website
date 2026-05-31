@@ -38,7 +38,7 @@ export function Header() {
         <div className="flex items-center justify-between gap-4">
         <a className="flex items-center gap-2 font-extrabold" href="#home" aria-label="Go to home" onClick={closeMenu}>
           <Code2 className="h-6 w-6 text-primary" />
-          <span>Nishiv Portfolio</span>
+          <span>Nishiv Trivedi Portfolio</span>
         </a>
           <div className="flex items-center gap-3">
             <nav className="hidden gap-5 text-sm font-bold text-muted-foreground md:flex" aria-label="Primary">
