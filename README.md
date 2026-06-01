@@ -2,6 +2,8 @@
 
 A responsive software developer portfolio built with React, Vite, TypeScript, Tailwind CSS, and shadcn-style UI components.
 
+Website: https://nishivtrivedi-portfolio.vercel.app/
+
 ## Features
 
 - Modern responsive portfolio layout
